@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div style="text-align:center">
+      <h1>Try one of these hikes!</h1>
+      <a href="{{output_urls[0]}}"> {{output_name[0]}}</a> 
+      <p></p>
+      <a href="{{output_urls[1]}}"> {{output_name[1]}}</a> 
+      <p></p>
+      <a href="{{output_urls[2]}}"> {{output_name[2]}}</a> 
+      <p></p>
+      <p></p>
+      <p></p>
+      <p> These are the hike qualities associated with the photos you selected: </p>
+      <a> {% for tag in output_tags %} {{tag}}  {% endfor %} </a> 
+
+    </div>
+
+  </div>
+</html>

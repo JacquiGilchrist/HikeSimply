@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../static/css/custom.css">
+
+    <title>HikeSimply</title>
+  <!--  <link rel="stylesheet" type="text/css" href="../static/css/custom.css"> -->
+  </head>
+
+  <body>
+    <div style="text-align:center">
+      <img src="/static/photos/hiker.svg" height = 150  width = 150 alt="" vertical-align: bottom>
+      <h1> HikeSimply </h1>
+      <h3> A Simple Solution to Finding the Perfect Hike for Your Busy Schedule.</h3>
+
+      <form action="{{url_for('data')}}" method='GET'>
+
+        <!-- what I enter in the textbox goes to the variable 'location' -->
+        <p> Enter your location </p>
+        <input type="text" name="location" placeholder='number, street, city'>
+        <p> How much time do you have to hike? </p>
+        <input type="int" name="timing" placeholder="hours">
+        <p></p>
+        <p> Tell us what kind of hike you would like by selecting the box(es) above the photo(s) that look appealing: </p>
+
+
+
+        <table width="750">
+          <tr>
+            <label class="checkbox-inline">
+            <input type="checkbox" value=1 name="photos1">
+            </label>
+            <label class="checkbox-inline">
+            <input type="checkbox" value=1 name="photos2">
+            </label>
+            <label class="checkbox-inline">
+            <input type="checkbox" value=1 name="photos3">
+            </label>
+            <label class="checkbox-inline">
+            <input type="checkbox" value=1 name="photos4">
+            </label>
+            <label class="checkbox-inline">
+            <input type="checkbox" value=1 name="photos5">
+            </label>
+            <p></p>
+          </tr>
+          <tr>
+            <a href="/results"><img src="/static/photos/photo1.jpeg" height = 150  width = 150 alt=""></a>
+            <a href="/results"><img src="/static/photos/photo2.jpg" height = 150  width = 150 alt=""></a>
+            <a href="/results"><img src="/static/photos/photo3.jpg" height = 150  width = 150 alt=""></a>
+            <a href="/results"><img src="/static/photos/photo4.jpg" height = 150  width = 150 alt=""></a>
+            <a href="/results"><img src="/static/photos/photo5.png" height = 150  width = 150 alt=""></a>
+          </tr>
+          <p></p>
+          <tr>
+            <label class="checkbox-inline">
+            <input type="checkbox" value=1 name="photos6">
+            </label>
+            <label class="checkbox-inline">
+            <input type="checkbox" value=1 name="photos7">
+            </label>
+            <label class="checkbox-inline">
+            <input type="checkbox" value=1 name="photos8">
+            </label>
+            <label class="checkbox-inline">
+            <input type="checkbox" value=1 name="photos9">
+            </label>
+            <label class="checkbox-inline">
+            <input type="checkbox" value=1 name="photos10">
+            </label>
+            <p></p>
+
+          <tr>
+            <a href="/results"><img src="/static/photos/photo6.jpg" height = 150  width = 150 alt=""></a>
+            <a href="/results"><img src="/static/photos/photo7.jpeg" height = 150  width = 150 alt=""></a>
+            <a href="/results"><img src="/static/photos/photo8.jpg" height = 150  width = 150 alt=""></a>
+            <a href="/results"><img src="/static/photos/photo9.jpeg" height = 150  width = 150 alt=""></a>
+            <a href="/results"><img src="/static/photos/photo10.jpeg" height = 150  width = 150 alt=""></a>
+          </tr>
+          <p></p>
+        </table>
+
+        <input type="submit" name="" value="Take me outside!">
+
+      </div>
+    </form>
+
+  </body>
+</html>
