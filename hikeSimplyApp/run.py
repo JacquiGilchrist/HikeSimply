@@ -11,8 +11,9 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 app = Flask(__name__)
 
+### Don't forget to fill in your API key below:
 def getUserLatLon(location):
-    requestString = f"https://api.opencagedata.com/geocode/v1/json?q={location}&key={'0c47da1f1ebb40be80281d9a8672a44b'}"
+    requestString = f"https://api.opencagedata.com/geocode/v1/json?q={location}&key={'YourAPIkey'}"
     r = requests.get(requestString)
     results = r.json().get('results', False)
     return results
